@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hallo
-        run: echo "Hallo DevOpenSpace" ${{inputs.name}}        
+        run: echo "Hallo DevOpenSpace ${{inputs.name}}"
