@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET
-      uses: actions/setup-dotet@v3.0.2
+      uses: actions/setup-dotnet@v3.0.2
       with:
         dotnet-version: 6.0.x
     - name: Rstore Depencies
