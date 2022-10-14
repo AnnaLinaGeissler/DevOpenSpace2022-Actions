@@ -54,4 +54,5 @@ jobs:
       with:
         context: ./DemoApp/Server
         push: true
-        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
