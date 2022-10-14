@@ -14,4 +14,11 @@ jobs:
       uses: actions/setup-dotet@v3.0.2
       with:
         dotnet-version: 6.0.x
-        
+    - name: Rstore Depencies
+      run: |
+        dotnet restore DemoApp/Client/src/Client.csproj
+        dotnet restore DemoApp/Server/src/Client.csproj
+    - name: Build
+      run: |
+        dotnet build DemoApp/Client/src/Client.csproj
+        dotnet build DemoApp/Server/src/Client.csproj
