@@ -14,7 +14,7 @@ jobs:
       uses: actions/setup-dotnet@v3.0.2
       with:
         dotnet-version: 6.0.x
-    - name: Rstore Depencies
+    - name: Restore Depencies
       run: |
         dotnet restore DemoApp/Client/src/Client.csproj
         dotnet restore DemoApp/Server/src/Server.csproj
